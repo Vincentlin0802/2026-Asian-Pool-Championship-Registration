@@ -250,37 +250,41 @@
   }
 
   button{
-  padding: 13px 32px;
-  font-size: 15px;
+  padding: 13px 34px;
+  min-width: 240px;
   border-radius: 999px;
-  border: 1px solid rgba(228,191,107,0.42);
-  cursor: pointer;
+  border: 1px solid rgba(228,191,107,0.34);
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 18%, rgba(255,255,255,0) 19%),
-    linear-gradient(135deg, #2a0f45 0%, #4e1d7d 42%, #7d3cc2 72%, #b98a34 100%);
-  color: #f7e7bf;
-  font-weight: 800;
+    linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 16%, rgba(255,255,255,0) 17%),
+    linear-gradient(135deg, #1c0b30 0%, #341257 38%, #56238a 72%, #6f31ae 100%);
+  color: #f2ddb0;
+  font-size: 15px;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0,0,0,0.45);
   box-shadow:
-    0 12px 28px rgba(24,10,40,0.45),
-    0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 0 18px rgba(125,60,194,0.18);
-  transition: transform 0.18s ease, filter 0.18s ease, box-shadow 0.18s ease;
+    0 10px 24px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(255,255,255,0.03) inset,
+    0 0 0 1px rgba(228,191,107,0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, filter 0.18s ease;
 }
 
 button:hover:not(:disabled){
   transform: translateY(-1px);
-  filter: brightness(1.06);
+  border-color: rgba(228,191,107,0.48);
   box-shadow:
-    0 14px 30px rgba(24,10,40,0.52),
-    0 0 0 1px rgba(255,255,255,0.05) inset,
-    0 0 22px rgba(125,60,194,0.24);
+    0 14px 28px rgba(0,0,0,0.48),
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 0 18px rgba(111,49,174,0.16);
+  filter: brightness(1.03);
 }
 
 button:active:not(:disabled){
   transform: translateY(0);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.36),
+    0 0 0 1px rgba(255,255,255,0.03) inset;
   filter: brightness(0.98);
 }
 
@@ -288,6 +292,7 @@ button:disabled{
   opacity: 0.42;
   cursor: not-allowed;
 }
+
 
 
   .payment-note{
