@@ -228,6 +228,29 @@
     word-break:break-word;
   }
 
+.notification-block .desc{
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.92);
+  font-weight: 500;
+}
+
+.notification-block .desc strong{
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 800;
+}
+
+@media (max-width: 720px){
+  .notification-block .desc{
+    font-size: 13px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+}
+
+
   /* ========== PAYMENT TYPOGRAPHY (你原本那套保留并优化) ========== */
   .pay-info{ margin-top:-6px; }
 
@@ -388,62 +411,47 @@
   </div>
 
   <!-- Notification -->
-  <div class="section-title">Notification</div>
-  <div class="info" style="margin-bottom:18px;">
-    <p class="desc">
-      <strong>
-        <span style="color:#ffffff;">1. This form is exclusively for </span>
-      	<span class="em">Stage 1 players</span>
-      	<span style="color:#ffffff;"> of the 2026 Asian Pool Championship to complete registration and pay the entry fee of 210 USD ($200 Entry Fee + $10 PayPal Fee) for Men & Women or 60 USD ($50 Entry Fee + $10 PayPal Fee) for Junior players</span>
-      	<span class="em big">It does not apply to Stage 2 players.</span>
-      </strong>
-    </p>
+<div class="section-title">Notification</div>
+<div class="info notification-block">
 
-    <p class="desc">
-      <strong>
-        <span style="color:#ffffff;">本報名表僅供</span>
-      	<span class="em">第一階段（Stage 1）參賽選手</span>
-      	<span style="color:#ffffff;">報名 2026 亞洲撞球錦標賽使用，並完成報名及繳納 210 美元（200 美元報名費 + 10 美元手續費）（男、女組）或 60 美元（50 美元報名費 + 10 美元手續費）（青少年組）</span>
-      	<span class="em big">本報名表不適用於第二階段（Stage 2）之參賽選手。</span>
-      </strong>
-    </p>
+  <p class="desc">
+    <strong>1. This form is exclusively for Stage 1 players of the 2026 Asian Pool Championship to complete registration and Stage 1 entry fee payment.</strong><br>
+    <span class="em big">It does not apply to Stage 2 players.</span>
+  </p>
 
-    <p class="desc" style="margin-top:10px;">
-      <strong>
-        <span style="color:#ffffff;">2. This registration fee of </span>
-      	<span class="em">210 USD ($200 Entry Fee + $10 PayPal Fee) for Men & Women</span>
-      	<span style="color:#ffffff;"> or </span>
-      	<span class="em">60 USD ($50 Entry Fee + $10 PayPal Fee) for Junior players</span>
-      	<span style="color:#ffffff;"> applies </span>
-      	<span class="em">exclusively to Stage 1 participation</span>
-      	<span style="color:#ffffff;">.</span><br>
-      	<span style="color:#ffffff;">Should you successfully qualify for Stage 2, an additional </span>
-      	<span class="em">200 USD</span>
-      	<span style="color:#ffffff;"> registration fee must be </span>
-      	<span class="em">paid on-site</span>
-		<span style="color:#ffffff;">(For the Junior category, no additional entry fee is required for Stage 2) </span>
-      	<span style="color:#ffffff;">.</span>
-      </strong>
-    </p>
+  <p class="desc">
+    <strong>1. 本報名表僅供 2026 亞洲撞球錦標賽第一階段（Stage 1）參賽選手進行報名及繳費使用。</strong><br>
+    <span class="em big">本報名表不適用於第二階段（Stage 2）之參賽選手。</span>
+  </p>
 
-    <p class="desc">
-      <strong>
-        <span style="color:#ffffff;">本次報名費為</span>
-      	<span class="em">210 美元（200 美元報名費 + 10 美元手續費）（男、女組）</span>
-      	<span style="color:#ffffff;">或</span>
-      	<span class="em">60 美元（50 美元報名費 + 10 美元手續費）（青少年組）</span>
-      	<span style="color:#ffffff;">僅適用於</span>
-      	<span class="em">第一階段（Stage 1）賽事參賽</span>
-      	<span style="color:#ffffff;">。</span><br>
-      	<span style="color:#ffffff;">如成功晉級第二階段（Stage 2），則須另行繳納</span>
-      	<span class="em">200 美元</span>
-      	<span style="color:#ffffff;">之報名費，並須於</span>
-      	<span class="em">現場繳納</span>
-		<span style="color:#ffffff;">(青少年組第二階段無需另行繳交參賽費) </span>
-      	<span style="color:#ffffff;">。</span>
-      </strong>
-    </p>
-  </div>
+  <p class="desc">
+    <strong>2. Stage 1 Entry Fee</strong><br>
+    Men: <span class="em">210 USD ($200 Entry Fee + $10 PayPal Fee)</span><br>
+    Women: <span class="em">210 USD ($200 Entry Fee + $10 PayPal Fee)</span><br>
+    Junior: <span class="em">60 USD ($50 Entry Fee + $10 PayPal Fee)</span>
+  </p>
+
+  <p class="desc">
+    <strong>2. 第一階段（Stage 1）報名費</strong><br>
+    男子組：<span class="em">210 美元（200 美元報名費 + 10 美元 PayPal 手續費）</span><br>
+    女子組：<span class="em">210 美元（200 美元報名費 + 10 美元 PayPal 手續費）</span><br>
+    青少年組：<span class="em">60 美元（50 美元報名費 + 10 美元 PayPal 手續費）</span>
+  </p>
+
+  <p class="desc">
+    <strong>3. The above fee applies exclusively to Stage 1 participation.</strong><br><br>
+    If a <span class="em">Men's player</span> successfully qualifies for <span class="em">Stage 2</span>, he is required to pay an additional <span class="em">compulsory 200 USD registration fee on-site</span>, because participation in both <span class="em">Men's 9-Ball</span> and <span class="em">Men's 10-Ball</span> is mandatory in Stage 2.<br><br>
+    For the <span class="em">Women's and Junior categories</span>, <span class="em">no additional registration fee is required</span> after qualifying for Stage 2.
+  </p>
+
+  <p class="desc">
+    <strong>3. 上述費用僅適用於第一階段（Stage 1）賽事參賽。</strong><br><br>
+    若<span class="em">男子組選手</span>成功晉級<span class="em">第二階段（Stage 2）</span>，須於現場<span class="em">強制另行繳納 200 美元報名費</span>，因男子組選手於第二階段必須同時參加<span class="em">男子 9 號球</span>及<span class="em">男子 10 號球</span>兩個項目。<br><br>
+    <span class="em">女子組與青少年組</span>成功晉級第二階段（Stage 2）後，<span class="em">無需另行繳交任何額外報名費</span>。
+  </p>
+
+</div>
+
 
   <!-- Regulations -->
   <div class="section-title">Regulations</div>
