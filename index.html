@@ -17,26 +17,26 @@
 
 <style>
   :root{
-  --bg:#0a0612;
-  --bg2:#14091f;
-  --panel: rgba(255,255,255,0.06);
-  --panel-strong: rgba(33,18,52,0.74);
-  --border: rgba(219,182,95,0.24);
-  --border2: rgba(181,118,255,0.22);
-  --text:#ffffff;
-  --muted: rgba(255,255,255,0.84);
+  --bg:#05030a;
+  --bg2:#0d0617;
+  --panel: rgba(20,10,32,0.88);
+  --panel-soft: rgba(32,16,48,0.72);
+  --border: rgba(212,169,74,0.22);
+  --border2: rgba(123,63,242,0.22);
+  --text:#f8f4ff;
+  --muted: rgba(248,244,255,0.80);
 
-  --purple-1:#3f1368;
-  --purple-2:#6721a8;
-  --purple-3:#9a56df;
-  --purple-4:#c78cff;
+  --purple-1:#1a0d2b;
+  --purple-2:#35125b;
+  --purple-3:#5e239d;
+  --purple-4:#8e48d7;
 
-  --gold:#d4a94a;
-  --gold-2:#f0d48a;
-  --gold-deep:#9a6a1f;
+  --gold:#c89a3d;
+  --gold-2:#e4bf6b;
+  --gold-deep:#7b5617;
 
-  --accent:#e8c679;
-  --warn:#f2d79d;
+  --accent:#e4bf6b;
+  --warn:#d8b980;
 }
 
 
@@ -47,11 +47,10 @@
   font-family:"Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 50% -10%, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.06) 16%, transparent 38%),
-    radial-gradient(circle at 18% 20%, rgba(154,86,223,0.28) 0%, transparent 34%),
-    radial-gradient(circle at 82% 22%, rgba(212,169,74,0.12) 0%, transparent 24%),
-    radial-gradient(circle at 76% 72%, rgba(103,33,168,0.28) 0%, transparent 34%),
-    linear-gradient(180deg, #1a0d28 0%, #0a0612 46%, #05030a 100%);
+    radial-gradient(circle at 18% 22%, rgba(94,35,157,0.26) 0%, transparent 34%),
+    radial-gradient(circle at 82% 18%, rgba(200,154,61,0.10) 0%, transparent 22%),
+    radial-gradient(circle at 76% 72%, rgba(53,18,91,0.34) 0%, transparent 36%),
+    linear-gradient(180deg, #14091f 0%, #09050f 48%, #040208 100%);
   background-attachment: fixed;
 }
 
@@ -60,9 +59,9 @@
   position: relative;
   text-align:center;
   padding:48px 20px 24px;
-  border-bottom: 1px solid rgba(212,169,74,0.18);
+  border-bottom: 1px solid rgba(200,154,61,0.16);
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 14%, rgba(0,0,0,0) 100%);
+    linear-gradient(180deg, rgba(94,35,157,0.12) 0%, rgba(0,0,0,0) 100%);
 }
 .header::before{
   content:"";
@@ -86,17 +85,17 @@
   letter-spacing:0.10em;
   text-transform:uppercase;
   font-weight:800;
-  color:#fff7e8;
+  color:#f0d9a2;
   text-shadow:
-    0 2px 0 rgba(154,106,31,0.45),
-    0 0 18px rgba(154,86,223,0.24);
+    0 0 16px rgba(94,35,157,0.22),
+    0 2px 0 rgba(123,86,23,0.45);
 }
 
 .header h2{
   margin:8px 0 0;
   font-size:22px;
   font-weight:600;
-  color:#f3dd9d;
+  color:#d9b86d;
   letter-spacing:0.04em;
 }
 
@@ -104,23 +103,21 @@
   margin:6px 0 0;
   font-size:18px;
   font-weight:500;
-  color:rgba(255,255,255,0.92);
+  color:rgba(248,244,255,0.88);
 }
+
 
   .container{
   max-width:900px;
   margin:40px auto;
   padding:24px 30px 36px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 16%, rgba(255,255,255,0.02) 100%);
+  background: linear-gradient(180deg, rgba(26,13,43,0.92) 0%, rgba(12,7,20,0.94) 100%);
   border-radius:18px;
   border:1px solid var(--border);
   box-shadow:
-    0 18px 46px rgba(0,0,0,0.42),
-    0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 0 38px rgba(154,86,223,0.10),
-    0 0 24px rgba(212,169,74,0.08);
-  backdrop-filter: blur(8px);
+    0 18px 46px rgba(0,0,0,0.48),
+    0 0 0 1px rgba(200,154,61,0.05) inset,
+    0 0 28px rgba(94,35,157,0.16);
 }
   .section-title{
   font-size:20px;
@@ -128,9 +125,8 @@
   border-left:4px solid var(--gold);
   padding-left:12px;
   margin: 0 0 14px;
-  color:#fff8ea;
+  color:#f1dfb5;
   letter-spacing:0.03em;
-  text-shadow: 0 0 12px rgba(212,169,74,0.14);
 }
 
   /* 默认 info（给联系方式/赛程这种可稍大块使用） */
@@ -154,11 +150,10 @@
   color: var(--gold-2);
   font-size:16px;
   font-weight:900;
-  text-shadow: 0 0 10px rgba(212,169,74,0.12);
 }
 
 .em.big{
-  color:#e7c6ff;
+  color:#cfa7ff;
   font-size:17px;
 }
 
@@ -184,28 +179,27 @@
   width:100%;
   padding:10px 12px;
   border-radius:10px;
-  border:1px solid rgba(212,169,74,0.20);
-  background: linear-gradient(180deg, rgba(30,18,47,0.94) 0%, rgba(18,10,31,0.96) 100%);
+  border:1px solid rgba(200,154,61,0.18);
+  background: linear-gradient(180deg, rgba(24,13,38,0.96) 0%, rgba(13,8,22,0.98) 100%);
   color:#fff;
   font-size:15px;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.02) inset;
 }
 	.field input:focus,
 .field textarea:focus,
 .field select:focus{
   outline:none;
-  border-color: rgba(240,212,138,0.68);
+  border-color: rgba(228,191,107,0.62);
   box-shadow:
-    0 0 0 2px rgba(212,169,74,0.10),
-    0 0 18px rgba(154,86,223,0.16);
+    0 0 0 2px rgba(200,154,61,0.10),
+    0 0 14px rgba(94,35,157,0.20);
 }
 
   /* ========== DECLARATION ========== */
   .declaration{
-  background: linear-gradient(180deg, rgba(43,24,67,0.72) 0%, rgba(26,14,42,0.68) 100%);
+  background: linear-gradient(180deg, rgba(39,21,61,0.72) 0%, rgba(20,11,31,0.78) 100%);
   border-radius:12px;
   padding:10px 12px;
-  border:1px solid rgba(212,169,74,0.16);
+  border:1px solid rgba(200,154,61,0.14);
 }
 
   .declaration label{
@@ -233,9 +227,9 @@
   flex-wrap:wrap;
   align-items:center;
   padding:12px 14px;
-  border:1px solid rgba(212,169,74,0.14);
+  border:1px solid rgba(200,154,61,0.14);
   border-radius:12px;
-  background: linear-gradient(180deg, rgba(47,26,72,0.58) 0%, rgba(26,14,42,0.46) 100%);
+  background: linear-gradient(180deg, rgba(44,22,68,0.54) 0%, rgba(22,12,34,0.52) 100%);
 }
 
   .category-options > label{
@@ -259,18 +253,16 @@
   padding:12px 30px;
   font-size:15px;
   border-radius:999px;
-  border:1px solid rgba(240,212,138,0.38);
+  border:1px solid rgba(228,191,107,0.28);
   cursor:pointer;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.04) 18%, rgba(255,255,255,0) 19%),
-    linear-gradient(120deg, #4f1883 0%, #7d32c4 48%, #d4a94a 100%);
-  color:#150c22;
+  background: linear-gradient(120deg, #3d1367 0%, #6d2fb0 55%, #c89a3d 100%);
+  color:#140b1f;
   font-weight:800;
   letter-spacing:0.06em;
   text-transform:uppercase;
   box-shadow:
-    0 10px 28px rgba(103,33,168,0.28),
-    0 2px 0 rgba(255,255,255,0.14) inset;
+    0 10px 24px rgba(53,18,91,0.34),
+    0 0 16px rgba(94,35,157,0.14);
 }
   button:disabled{ opacity:0.4; cursor:not-allowed; }
   button:hover:not(:disabled){ filter:brightness(1.09); }
@@ -432,15 +424,16 @@
   <h3>Junior: 60 USD ($50 Entry Fee + $10 Paypal Fee)</h3>
 
   <div style="
-    color:#f4d78b;
+    color:#f0d9a2;
     font-size:16px;
     font-weight:600;
-    margin-top:10px;
+    margin-top:12px;
     padding:10px 16px;
-    border:1px solid rgba(224,184,79,0.35);
-    border-radius:8px;
+    border:1px solid rgba(200,154,61,0.30);
+    border-radius:10px;
     display:inline-block;
-    background:rgba(123,63,242,0.14);
+    background:linear-gradient(180deg, rgba(94,35,157,0.22) 0%, rgba(41,18,67,0.18) 100%);
+    box-shadow:0 0 18px rgba(94,35,157,0.10);
 ">
     This registration form is only for Stage 1 participants.<br>
     此報名表僅供 Stage 1 的參賽選手填寫
