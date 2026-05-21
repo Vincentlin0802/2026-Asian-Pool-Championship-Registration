@@ -31,9 +31,12 @@
   --purple-3:#5e239d;
   --purple-4:#8e48d7;
 
-  --gold:#e7b93f;
-  --gold-2:#ffd15a;
-  --gold-deep:#b88212;
+  --gold:#f0b93a;
+--gold-2:#ffd457;
+--gold-deep:#b88410;
+--accent:#ffd457;
+--warn:#d7ba74;
+
 
   --accent:#e4bf6b;
   --warn:#d8b980;
@@ -69,7 +72,7 @@
   inset:0;
   pointer-events:none;
   background:
-    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 18%, transparent 42%);
+    radial-gradient(circle at 50% 0%, rgba(142,72,215,0.24) 0%, rgba(94,35,157,0.12) 20%, transparent 46%);
 }
   .event-logo{
     height: clamp(220px, 28vw, 320px);
@@ -255,35 +258,37 @@
   }
 
   button{
-  padding: 13px 34px;
-  min-width: 240px;
+  padding: 14px 36px;
+  min-width: 250px;
   border-radius: 999px;
-  border: 1px solid rgba(228,191,107,0.34);
+  border: 1px solid rgba(255,212,87,0.34);
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 16%, rgba(255,255,255,0) 17%),
-    linear-gradient(135deg, #1c0b30 0%, #341257 38%, #56238a 72%, #6f31ae 100%);
-  color: #f2ddb0;
+    linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0) 18%),
+    linear-gradient(135deg, #1a0a2d 0%, #2d0f4d 34%, #4a1b79 70%, #6a2ab0 100%);
+  color: #ffe29a;
   font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   text-shadow: 0 1px 2px rgba(0,0,0,0.45);
   box-shadow:
-    0 10px 24px rgba(0,0,0,0.42),
-    0 0 0 1px rgba(255,255,255,0.03) inset,
-    0 0 0 1px rgba(228,191,107,0.06);
+    0 12px 24px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(255,255,255,0.02) inset,
+    0 0 0 1px rgba(255,212,87,0.06),
+    0 0 18px rgba(106,42,176,0.14);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, filter 0.18s ease;
 }
 
 button:hover:not(:disabled){
   transform: translateY(-1px);
-  border-color: rgba(228,191,107,0.48);
+  border-color: rgba(255,212,87,0.48);
   box-shadow:
     0 14px 28px rgba(0,0,0,0.48),
-    0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 0 18px rgba(111,49,174,0.16);
-  filter: brightness(1.03);
+    0 0 0 1px rgba(255,255,255,0.03) inset,
+    0 0 22px rgba(106,42,176,0.20);
+  filter: brightness(1.04);
 }
+
 
 button:active:not(:disabled){
   transform: translateY(0);
@@ -489,10 +494,10 @@ button:disabled{
 <!-- Event Date Section -->
 <div class="section-title">Event Schedule</div>
 <div class="info" style="font-size:15px; line-height:1.8;">
-  <strong>Event Date:</strong> January 24–31, 2026<br>
-  <strong>Stage 1 Qualifiers(Men&Women):</strong> January 24–26, 2026 <br>
-  <strong>Stage 1 Qualifiers(Junior):</strong> January 25–26, 2026 <br>
-  <strong>Stage 2 Main Event:</strong> January 27–31, 2026<br>
+  <strong>Event Date:</strong> July 7–15, 2026<br>
+  <strong>Stage 1 Qualifiers(Men&Women):</strong> July 7–9, 2026 <br>
+  <strong>Stage 1 Qualifiers(Junior):</strong> July 8–9, 2026 <br>
+  <strong>Stage 2 Main Event:</strong> July 10–15, 2026<br>
   <strong>Location:</strong> PUSLATNAS POBSI<br>
   iNews Tower 4th Floor<br>
   Jl. Kebon Sirih Kav. 17-19,<br>
@@ -526,21 +531,22 @@ button:disabled{
 <div class="section-title">Notification</div>
 <div class="info notification-block">
 	<div style="
-  color:#ffb3b3;
+  color:#f2ddb0;
   font-size:14px;
   line-height:1.8;
   margin:0 0 18px;
   padding:14px 16px;
-  border:1px solid rgba(255,77,77,0.45);
+  border:1px solid rgba(255,212,87,0.26);
   border-radius:10px;
-  background:rgba(255,77,77,0.08);
+  background:linear-gradient(180deg, rgba(74,27,121,0.28) 0%, rgba(33,12,54,0.24) 100%);
+  box-shadow:0 0 18px rgba(106,42,176,0.10);
 ">
-  <strong style="color:#ff4d4d;">Important Notice:</strong><br>
-  Vietnam players, please register directly through <span class="em">APLUS</span> instead of submitting this form.<br>
-  Contact information: <br>
-  WhatsApp: XXXXXXXX<br>
-  Email: XXXXXXXX<br><br>
+  <strong style="color:#ffd457;">Important Notice:</strong><br>
+  Vietnamese players, please contact <span class="em">Ms Hiền / APLUS</span> directly for registration.<br>
+  Contact: <span class="em">+84 325332025</span><br><br>
 
+	<strong style="color:#ffd457;">Thông báo quan trọng:</strong><br>
+  Cơ thủ Việt Nam báo danh vui lòng liên hệ SĐT/Zalo: <span class="em">+84 325332025 (Ms Hiền)</span>
 </div>
 
   <p class="desc">
