@@ -403,6 +403,35 @@ button:disabled{
   color: var(--warn);
 }
 
+	.guide-card{
+  margin-bottom:18px;
+}
+
+.guide-link{
+  display:inline-block;
+  margin-top:10px;
+  padding:11px 20px;
+  border-radius:999px;
+  border:1px solid rgba(255,212,87,0.28);
+  background: linear-gradient(135deg, #26103f 0%, #3d1764 55%, #5f25a1 100%);
+  color:#ffe29a;
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:0.04em;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.30),
+    0 0 0 1px rgba(255,255,255,0.02) inset;
+  transition: transform 0.18s ease, filter 0.18s ease, box-shadow 0.18s ease;
+}
+
+.guide-link:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.36),
+    0 0 16px rgba(106,42,176,0.14);
+}
+
   /* ========== MOBILE ========== */
   @media (max-width: 720px){
     body{ font-size:14px; }
@@ -507,6 +536,21 @@ button:disabled{
     2 Hồ Xuân Hương, Xuân Hòa,<br>
     Hồ Chí Minh, Vietnam
   </p>
+</div>
+
+
+	<!-- Tournament Guide Section -->
+<div class="section-title">Tournament Information Guide</div>
+<div class="info guide-card">
+  <div class="declaration" style="padding:14px 14px;">
+    <p class="desc" style="margin:0;">
+      <strong>Please review the official tournament information guide before completing registration.</strong><br>
+      請於報名前先查閱官方賽事資訊指南。
+    </p>
+    <a class="guide-link" href="files/Tournament-Information-Guide-2026-Asian-Pool-Championships.pdf" target="_blank" rel="noopener noreferrer">
+      View Tournament Guide (PDF)
+    </a>
+  </div>
 </div>
 
 
